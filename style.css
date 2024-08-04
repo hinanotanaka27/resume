@@ -1,3 +1,105 @@
-.profile-text{
-    background-color: violet;
-}
+@charset "UTF-8";
+ /* 共通部分
+--------------------------*/
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #432
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center; /* 縦方向の中央揃え */
+    margin-top: 20px; /* 上の余白を調整 */
+    justify-content: center;
+  }
+  
+  .profile-image {
+    width: 150px; /* 画像の幅を指定 */
+    height: auto; /* 画像の高さを自動調整 */
+    margin-right: 20px; /* 画像とテキストの間の余白を指定 */
+  }
+  
+  .profile-text {
+    font-size: 2rem; /* テキストのサイズを調整 */
+    font-family: "Pacifico", cursive;
+  }
+  
+  .icon-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .icon {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top:50px;
+    margin: 10px; /*各枠の間に少し余白を追加します*/
+    /* border:1px solid rgb(246, 17, 17); */
+    line-height: 1.7;
+  }
+  
+  .box1,.box2{
+    flex: 1; /* 各BOXの幅を均等にする */
+    margin: 10px; /* 各BOXの間に少し余白を追加 */
+  }
+  
+  .cute-box {
+    border: 2px solid rgb(244, 195, 212); /* 少し太めの赤い枠線 */
+    border-radius: 15px; /* 角を丸くする */
+    padding: 15px; /* 内側の余白を追加 */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* 軽い影をつけて立体感を出す */
+    background-color: #fff; /* 背景を白にする */
+    margin: 10px; /* ボックス間の余白 */}
+  
+  
+    /* 保有資格 */
+  .certification,
+  .skills{
+    list-style-type: none;
+    padding: 0; /* リストのパディングをリセット */
+    margin-left: 10px;
+  }
+  
+  .certification li,
+  .skills li {
+    position: relative;
+    padding-left: 25px; /* マーカー分のスペースを確保 */
+  }
+  
+  .certification li::before {
+    content: "✔"; /* カスタムマーカーとしてハートを使用 */
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .skills li::before{
+    content: "✔"; /* カスタムマーカーとして✔を使用 */
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between; /* これにより、3つの枠が横に並びます */
+    margin-top: 50px;
+  }
+  
+  .box2 {
+    flex: 1;
+    margin: 10px; /* 各枠の間に少し余白を追加 */
+  }
+  
+  .strengths{
+    font-size: 18px;
+  }
+  
